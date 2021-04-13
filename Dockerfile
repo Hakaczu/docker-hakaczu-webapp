@@ -1,8 +1,8 @@
 
 FROM python:3
-COPY ./requirements.txt /requirements.txt
+COPY ./requirements.txt /requirements.txt 
+COPY ./App.py /App.py 
 WORKDIR /
 RUN pip install -r requirements.txt
-COPY . /
 ENTRYPOINT [ "python3" ]
-CMD [ "app1.py" ]
+CMD [ "App.py" ]
