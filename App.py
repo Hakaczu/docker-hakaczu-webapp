@@ -1,6 +1,7 @@
   
-from flask import request, Flask
-import jsonapp1 = Flask(__name__)
+from flask import Flask
+from flask import make_response
+app = Flask(__name__)
 @app.route('/')
 def home():
     return 'Hello World!'
