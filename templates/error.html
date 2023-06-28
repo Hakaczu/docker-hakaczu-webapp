@@ -31,23 +31,23 @@
         <div>
             <!-- A wrapper for all the blog posts -->
             <div class="posts">
-                <h1 class="content-subhead">Subreddit: {{ subreddit }} </h1>
+                <h1 class="content-subhead">Subreddit: Try Refresh Page </h1>
 
                 <!-- A single blog post -->
                 <section class="post">
                     <header class="post-header">
                     
 
-                        <h2 class="post-title">{{ meme_title }}</h2>
+                        <h2 class="post-title">API Error</h2>
 
                         <p class="post-meta">
-                            By {{ author}}
+                            By Hakaczu
                         </p>
                     </header>
 
                     <div class="post-description">
                         <p>
-                            <img class="pure-img" src="{{meme_pic}}">
+                            <img class="pure-img" src="{{ url_for('static',filename='img/error.jpg') }}">
                         </p>
                     </div>
                 </section>
