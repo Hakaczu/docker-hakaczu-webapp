@@ -6,7 +6,7 @@ COPY ./requirements.txt requirements.txt
 COPY ./static ./static
 COPY ./templates ./templates/
 COPY ./app.py app.py 
-RUN pip install -r requirements.txt
+RUN pip install -r requirements.txt && rm requirements.txt
 ENTRYPOINT [ "python3" ]
 CMD [ "/meme-app/app.py" ]
 EXPOSE 5050/tcp
